@@ -1,0 +1,34 @@
+[window]
+dimensions = { columns = 120, lines = 30 }
+padding = { x = 10, y = 10 }
+decorations = "full" # Options: "full", "none", "buttonless"
+opacity = 0.85 # Adjust transparency (0.0 is fully transparent, 1.0 is opaque)
+
+[font]
+normal = { family = "JetbrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetbrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetbrainsMono Nerd Font", style = "Italic" }
+size = 15.0
+
+[general]
+import = [
+  "~/.config/alacritty/catppuccin/catppuccin-macchiato.toml"
+]
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[bell]
+animation = "EaseOutExpo"
+duration = 0
+color = "#F4DBD6"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>"
+
+[keyboard]
+bindings = [
+  { key = "V", mods = "Control|Shift", action = "Paste" },
+  { key = "C", mods = "Control|Shift", action = "Copy" },
+]

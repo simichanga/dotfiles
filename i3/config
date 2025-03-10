@@ -1,0 +1,18 @@
+# Set mod key as Super/Windows key
+set $mod Mod4
+
+# Load Font
+font pango:JetBrainsMono Nerd Font 10
+
+# Load sub-configurations
+include ~/.config/i3/apps.conf
+include ~/.config/i3/gaps.conf
+include ~/.config/i3/colors.conf
+include ~/.config/i3/workspaces.conf
+include ~/.config/i3/startup.conf
+include ~/.config/i3/bar.conf
+include ~/.config/i3/keybindings.conf
+
+# Reload and restart i3
+bindsym $mod+Shift+r restart
+bindsym $mod+Shift+c reload
